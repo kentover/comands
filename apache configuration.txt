@@ -1,0 +1,39 @@
+sudo apt-get update
+
+--##install apache##--
+
+sudo apt-get install apache2
+
+--##verify instalation##--
+
+http://local.server.ip
+
+--##check local ip server##--
+
+hostname -I | awk '{print $1}'
+
+--##Configure Your Firewall##--
+
+sudo ufw show app list
+
+sudo ufw allow 'Apache'
+
+sudo ufw status
+
+--##Apache Service Controls##--
+
+-#Stop Apache:#-
+
+sudo systemctl stop apache2.service
+
+-#Start Apache:#-
+
+sudo systemctl start apache2.service
+
+-#Restart Apache:#-
+
+sudo systemctl restart apache2.service
+
+-#Reload Apache:#-
+
+sudo systemctl reload apache2.service

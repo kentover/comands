@@ -1,5 +1,5 @@
 #-------------------------------------------------
-# Introduction to Docker by Denis Astahov
+# Introduction to Docker by Kentover
 
 
 Install Docker on Ubuntu 18.04
